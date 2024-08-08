@@ -22,7 +22,8 @@ canvas {
     object-fit: fill;
     width: 800px;
     display: flex;
-    margin-top: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 #Screenshot-Btn, .screenshot {
     position: fixed;

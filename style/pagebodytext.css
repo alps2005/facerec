@@ -1,5 +1,5 @@
 .title {
-    font-family: "JetBrains Mono";
+    font-family: "JetBrains Mono", serif;
     display: flex;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -11,4 +11,20 @@
 }
 .title:hover {
     color: rgb(255, 255, 255);
+}
+.bodytitles {
+    font-family: "JetBrains Mono", serif;
+    font-weight: bold;
+
+}
+.bodyp {
+    margin-top: 25px;
+    font-family: "JetBrains Mono", serif;
+    display: flex;
+    max-width: fit-content;
+    font-size: small;
+    margin-bottom: 50px;
+    margin-left: 65px;
+    transition: 3s;
+    text-align: center;
 }
