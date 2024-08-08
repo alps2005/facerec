@@ -1,0 +1,154 @@
+.home-btn {
+    width: 200px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid black;
+    cursor: pointer;
+    font-family: "JetBrains Mono", serif;
+    font-size: large;
+    margin: 0 20px;
+    transition: 1s;
+}
+.home-btn:hover {
+    background-color: rgb(237, 210, 40);
+    color: white;
+    border-color: white;
+    border-radius: 50px;
+    box-shadow: 10px 10px 0 black;
+    transition: 0.5s;
+}
+.home-btn:active{
+    opacity: 0.5;
+    color: rgb(237, 210, 40);
+    border-color: rgb(237, 210, 40);
+    box-shadow: 0 0 8px rgb(237, 210, 40);
+    transition: 0s;
+}
+.Emo-btn {
+    background-color: white;
+    width: 415px;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid black;
+    cursor: pointer;
+    font-family: "JetBrains Mono", serif;
+    font-size: large;
+    margin: 0 20px;
+    transition: 1s;
+}
+.Emo-btn:hover {
+    background-color: rgb(2, 158, 255);
+    color: white;
+    border-color: white;
+    border-radius: 50px;
+    box-shadow: 10px 10px 0 black;
+    transition: 0.5s;
+}
+.Emo-btn:active{
+    opacity: 0.5;
+    color: rgb(2, 158, 255);
+    border-color: rgb(2, 158, 255);
+    box-shadow: 0 0 8px rgb(2, 158, 255);
+    transition: 0s;
+}
+.Rec-btn {
+    background-color: white;
+    width: 275px;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid black;
+    cursor: pointer;
+    font-family: "JetBrains Mono", serif;
+    font-size: large;
+    margin: 0 20px;
+    transition: 1s;
+}
+.Rec-btn:hover {
+    background-color: rgb(237, 75, 75);
+    color: white;
+    border-color: white;
+    border-radius: 50px;
+    box-shadow: 10px 10px 0 black;
+    transition: 0.5s;
+}
+.Rec-btn:active{
+    opacity: 0.5;
+    color: rgb(237, 75, 75);
+    border-color: rgb(237, 75, 75);
+    box-shadow: 0 0 8px rgb(237, 75, 75);
+    transition: 0s;
+}
+.Screenshot-Btn{
+    width: 200px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid black;
+    cursor: pointer;
+    font-family: "JetBrains Mono", serif;
+    font-size: small;
+    margin: 5% 36%;
+    transition: 1s;
+}
+.Screenshot-Btn:hover {
+    background-color: rgb(116, 237, 40);
+    color: white;
+    border-color: white;
+    border-radius: 50px;
+    transition: 0.5s;
+    animation: blink 1s infinite;
+}
+.Screenshot-Btn:active{
+    background-color: rgb(244, 161, 53);
+    border-color: rgb(244, 161, 53);
+    box-shadow: 0 0 8px rgb(244, 161, 53);
+    transition: 0s;
+    animation: stop;
+}
+@keyframes blink {
+    0%{
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#close-btn:hover{
+    opacity: 0.5;
+    animation: blink 1s infinite;
+}
+#close-btn:active{
+    opacity: 0.5;
+    animation: blink 1s infinite;
+}
+#uploadButton {
+    width: 150px;
+    margin-top:10px;
+    margin-bottom:20px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid black;
+    cursor: pointer;
+    font-family: "JetBrains Mono", serif;
+    font-size: small;
+    /*margin: 5% 36%;*/
+    transition: 1s;
+}
+#uploadButton:hover {
+    background-color: #6427ec;
+    color: white;
+    border-color: white;
+    border-radius: 50px;
+    transition: 0.5s;
+    animation: blink 1s infinite;
+}

@@ -1,0 +1,14 @@
+.title {
+    font-family: "JetBrains Mono";
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 65px;
+    max-width: fit-content;
+    transition: 3s;
+    text-align: center;
+    font-size: 35px;
+}
+.title:hover {
+    color: rgb(255, 255, 255);
+}

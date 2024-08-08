@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project</title>
+  <script defer src="javascript/face-api.min.js"></script>
+  <script defer src="javascript/recognition_script.js"></script>
+  <script defer src="javascript/pages.js"></script>
+  <script defer src="javascript/screenshot.js"></script>
+  <script defer src="javascript/script.js"></script>
+  <link rel="stylesheet" href="style/buttons.css">
+  <link rel="stylesheet" href="style/pagebodytext.css">
+  <link rel="stylesheet" href="style/navigationbar.css">
+  <link rel="stylesheet" href="style/media-style.css">
+  <link rel="stylesheet" href="style/body.css">
+  <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css' rel='stylesheet'>
+</head>
+<body>
+<header>
+  <div class="title">Proyecto Sistemas operativos: Entrada/Salida</div>
+  <div class="navbar">
+    <button class="home-btn" onclick="showPage('home')">Home</button>
+    <button class="Emo-btn" onclick="showPage('emo')">Reconocimiento de estados de ánimo</button>
+    <button class="Rec-btn" onclick="showPage('rec')">Reconocimiento facial</button>
+  </div>
+</header>
+<div id="home" class="content active">
+  <figure><img alt="" class="image" src="https://ecotec.edu.ec/content/uploads/2022/08/logo-ecotec-2.png"></figure>
+</div>
+<div id="emo" class="content">
+  <div>
+    <video class="video" id="video" width="800" height="600" autoplay muted></video>
+  </div>
+  <div>
+    <button class="Screenshot-Btn">Screenshot</button>
+  </div>
+  <div class="src-preview">
+    <div class="screenshot">
+      <i id="close-btn" class="fa-solid fa-xmark"></i>
+      <img src="https://ecotec.edu.ec/content/uploads/2022/08/logo-ecotec-2.png" alt="screenshot">
+    </div>
+  </div>
+</div>
+<div id="rec" class="content">
+  <input type="file" id="imageUpload" style="display: none;">
+  <button id="uploadButton">Upload Image</button>
+</div>
+</body>
+</html>
