@@ -63,7 +63,7 @@ video.addEventListener('play', () => {
         if (expressions.angry > 0.5) {
           showNotification('Expresion anojada detectada!');
         }
-        if (expressions.disgust > 0.5) {
+        if (expressions.disgusted > 0.5) {
           showNotification('Expresion de disgusto detectada!');
         }
         if (expressions.fearful > 0.5) {
