@@ -44,5 +44,52 @@ video.addEventListener('play', () => {
     faceapi.draw.drawDetections(canvas, resizedDetections);
     faceapi.draw.drawFaceLandmarks(canvas, resizedDetections);
     faceapi.draw.drawFaceExpressions(canvas, resizedDetections);
+    
+    if (detections.length > 0) {
+      detections.forEach(detection => {
+        const expressions = detection.expressions;
+        if (expressions.neutral > 0.5) {
+          showNotification('Detectando expresion neutral.')
+        }
+        if (expressions.sad > 0.5) {
+          showNotification('Expresion triste detectada!');
+        }
+        if (expressions.happy > 0.5) {
+          showNotification('Expresion feliz detectada!');
+        }
+        if (expressions.surprised > 0.5) {
+          showNotification('Expresion de sorpresa detectada!');
+        }
+        if (expressions.angry > 0.5) {
+          showNotification('Expresion anojada detectada!');
+        }
+        if (expressions.disgust > 0.5) {
+          showNotification('Expresion de disgusto detectada!');
+        }
+        if (expressions.fearful > 0.5) {
+          showNotification('Expresion de miedo detectada!');
+        }
+      });
+    }
   }, 100);
 });
+
+function showNotification(message) {
+  const notification = document.createElement('div');
+  notification.textContent = message;
+  notification.style.position = 'absolute';
+  notification.style.bottom = '20px';
+  notification.style.left = '50%';
+  notification.style.transform = 'translateX(-50%)';
+  notification.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+  notification.style.color = 'white';
+  notification.style.padding = '10px 20px';
+  notification.style.borderRadius = '5px';
+  notification.style.zIndex = '1000';
+
+  document.body.appendChild(notification);
+
+  setTimeout(() => {
+    notification.remove();
+  }, 3000); // Remove notification after 3 seconds
+}
