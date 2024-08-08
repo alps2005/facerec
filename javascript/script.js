@@ -22,6 +22,7 @@ if (recElement) {
 
     recElement.append('Loaded'); // Append "Loaded" to #rec instead of document.body
 
+
     uploadButton.addEventListener('click', () => {
       imageUpload.click(); // Programmatically click the file input
     });
