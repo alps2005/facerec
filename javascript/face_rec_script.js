@@ -12,7 +12,7 @@ if (recElement) {
   async function start() {
     const container = document.createElement('div');
     container.style.position = 'relative';
-    recElement.append(container); // Append to #rec instead of document.body
+    recElement.append(container); 
 
     const labeledFaceDescriptors = await loadLabeledImages();
     const faceMatcher = new faceapi.FaceMatcher(labeledFaceDescriptors, 0.6);
@@ -20,11 +20,11 @@ if (recElement) {
     let image;
     let canvas2;
 
-    recElement.append('Loaded'); // Append "Loaded" to #rec instead of document.body
+    recElement.append('Loaded'); 
 
 
     uploadButton.addEventListener('click', () => {
-      imageUpload.click(); // Programmatically click the file input
+      imageUpload.click(); 
     });
 
     imageUpload.addEventListener('change', async () => {
@@ -33,8 +33,8 @@ if (recElement) {
 
       // Create and style the image
       image = await faceapi.bufferToImage(imageUpload.files[0]);
-      image.style.width = '800px';  // Set your desired width
-      image.style.height = 'auto';  // Maintain aspect ratio
+      image.style.width = '800px';  
+      image.style.height = 'auto';  
 
       // Create and style the canvas
       canvas2 = faceapi.createCanvasFromMedia(image);
@@ -42,15 +42,15 @@ if (recElement) {
       canvas2.style.display = 'flex';
       canvas2.style.justifyContent = 'center';
       canvas2.style.alignItems = 'center';
-      canvas2.style.width = '800px';  // Set your desired canvas width
-      canvas2.style.height = 'auto';  // Maintain aspect ratio
+      canvas2.style.width = '800px'; 
+      canvas2.style.height = 'auto';  
       canvas2.style.objectFit = 'contain';
       canvas2.style.marginTop = '15px';
       canvas2.style.top = '0';
       canvas2.style.left = '0';
 
       container.append(image);
-      container.append(canvas2);  // Append the canvas after the image
+      container.append(canvas2);  
 
       // Resize the canvas to match the image dimensions
       const displaySize = { width: image.width, height: image.height };
