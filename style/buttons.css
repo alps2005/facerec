@@ -94,6 +94,7 @@
     font-size: small;
     margin: 5% 36%;
     transition: 1s;
+    justify-content: center;
 }
 .Screenshot-Btn:hover {
     background-color: rgb(116, 237, 40);

@@ -17,6 +17,7 @@ canvas {
     border: 5px black solid;
     border-radius: 25px;
     display: flex;
+    justify-content: center;
 }
 .image {
     object-fit: fill;

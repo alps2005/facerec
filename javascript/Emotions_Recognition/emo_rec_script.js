@@ -49,7 +49,7 @@ video.addEventListener('play', () => {
       detections.forEach(detection => {
         const expressions = detection.expressions;
         if (expressions.neutral > 0.5) {
-          showNotification('Detectando expresion neutral.')
+          showNotification('Detectando expresion neutral')
         }
         if (expressions.sad > 0.5) {
           showNotification('Expresion triste detectada!');
@@ -78,10 +78,10 @@ function showNotification(message) {
   const notification = document.createElement('div');
   notification.textContent = message;
   notification.style.position = 'absolute';
+  notification.style.justifyContent = 'center';
   notification.style.bottom = '20px';
-  notification.style.left = '50%';
-  notification.style.transform = 'translateX(-50%)';
-  notification.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+  // notification.style.transform = 'translateX(-50%)';
+  notification.style.backgroundColor = 'rgba(0,0,0,0.8)';
   notification.style.color = 'white';
   notification.style.padding = '10px 20px';
   notification.style.borderRadius = '5px';

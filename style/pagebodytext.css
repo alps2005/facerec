@@ -1,12 +1,10 @@
 .title {
     font-family: "JetBrains Mono", serif;
     display: flex;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 65px;
-    max-width: fit-content;
+    justify-content: center;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
     transition: 3s;
-    text-align: center;
     font-size: 35px;
 }
 .title:hover {
