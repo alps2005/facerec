@@ -12,7 +12,7 @@ if (recElement) {
   async function start() {
     const container = document.createElement('div');
     container.style.position = 'relative';
-    recElement.append(container); 
+    recElement.append(container);
 
     const labeledFaceDescriptors = await loadLabeledImages();
     const faceMatcher = new faceapi.FaceMatcher(labeledFaceDescriptors, 0.6);
@@ -20,9 +20,8 @@ if (recElement) {
     let image;
     let canvas2;
 
-    recElement.append('Loaded'); 
-
-
+    recElement.append('Loaded');
+    
     uploadButton.addEventListener('click', () => {
       imageUpload.click(); 
     });
